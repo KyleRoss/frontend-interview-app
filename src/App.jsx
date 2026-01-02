@@ -71,6 +71,9 @@ const App = () => {
               <span className="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-green-600/20 ring-inset">
                 Active
               </span>
+              <span className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-red-600/20 ring-inset">
+                Inactive
+              </span>
             </td>
             <td className="px-3 py-5 text-sm whitespace-nowrap text-gray-500">
               Role
