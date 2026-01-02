@@ -36,7 +36,7 @@ You will be using the following API to fetch the data for the application:
 https://dummyjson.com/c/fbb6-9a35-4cd7-a755
 
 
-#### Available Scripts
+## Available Scripts
 
 In this project, you can run the following scripts:
 
