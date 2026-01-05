@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "4.1.18",
-		"@vitejs/plugin-react": "^5.1.2",
+		"@vitejs/plugin-react-swc": "4.2.2",
 		"lightningcss": "1.30.2",
 		"postcss": "8.5.6",
 		"tailwindcss": "4.1.18",
