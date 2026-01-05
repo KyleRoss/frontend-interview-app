@@ -17,22 +17,22 @@ const App = () => {
       </div>
 
       {/* Users Table */}
-      <table className="relative min-w-full divide-y divide-gray-300">
+      <table className="relative min-w-full divide-y divide-gray-300 text-gray-900">
         <thead>
           <tr>
             <th
               scope="col"
-              className="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+              className="py-3.5 pr-3 pl-4 text-left text-sm font-semibold sm:pl-0"
             >
               Name
             </th>
-            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold">
               Title
             </th>
-            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold">
               Status
             </th>
-            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold">
               Role
             </th>
           </tr>
@@ -50,7 +50,7 @@ const App = () => {
                   />
                 </div>
                 <div className="ml-4">
-                  <div className="font-medium text-gray-900">
+                  <div className="font-medium">
                     User Name
                   </div>
                   <div className="mt-1 text-gray-500">
@@ -59,10 +59,8 @@ const App = () => {
                 </div>
               </div>
             </td>
-            <td className="px-3 py-5 text-sm whitespace-nowrap text-gray-500">
-              <div className="text-gray-900">
-                Job Title
-              </div>
+            <td className="px-3 py-5 text-sm whitespace-nowrap">
+              Job Title
               <div className="mt-1 text-gray-500">
                 Department
               </div>
