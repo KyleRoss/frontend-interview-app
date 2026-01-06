@@ -1,0 +1,113 @@
+{
+  /*****************************************
+  * File Settings
+  ******************************************/
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true
+  },
+  /*****************************************
+  * Editor Settings
+  ******************************************/
+  "editor.tabSize": 2,
+  "editor.useTabStops": true,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.wordSeparators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
+  "editor.renderControlCharacters": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  /*****************************************
+  * Breadcrumb Settings
+  ******************************************/
+  "breadcrumbs.enabled": true,
+  /*****************************************
+  * Search Settings
+  ******************************************/
+  "search.exclude": {
+    "**/node_modules": true,
+    "package-lock.json": true
+  },
+  /*****************************************
+  * Language-specific Settings
+  ******************************************/
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    // Set the formatter for various languages to ESLint
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  /*****************************************
+  * Typescript Settings
+  ******************************************/
+  // Always use the workspace version of TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  /*****************************************
+  * Testing Settings
+  ******************************************/
+  "testing.coverageToolbarEnabled": true,
+  "testing.displayedCoveragePercent": "statement",
+  "testing.automaticallyOpenTestResults": "openOnTestFailure",
+  /*****************************************
+  * CSS Settings
+  ******************************************/
+  "css.validate": false,
+  "scss.validate": false,
+  /*****************************************
+  * Extension Settings
+  ******************************************/
+  // ESLint settings
+  "eslint.runtime": "node",
+  "eslint.format.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.useESLintClass": true,
+  "eslint.validate": [
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // Prettier settings
+  // Disable prettier if installed
+  "prettier.enable": false,
+  // TailwindCSS settings
+  // Add support for clsx to TailwindCSS IntelliSense
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "twMerge\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    "[a-zA-Z]*ClassName='([^']+)'",
+    "[a-zA-Z]*ClassName=\"([^\"]+)\"",
+    "[a-zA-Z]*ClassName={`([^`]+)`}"
+  ],
+  "tailwindCSS.experimental.configFile": {
+    "src/index.css": "src/**",
+  },
+  // Vitest settings
+  "vitest.vitestPackagePath": "node_modules/vitest/package.json",
+  "vitest.configSearchPatternExclude": "{**/node_modules/**,**/.*/**,**/*.d.ts,**/.git/**}",
+}
