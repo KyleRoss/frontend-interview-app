@@ -1,17 +1,15 @@
-import { Layout } from './Layout';
+import { DefaultLayout } from '@/layouts/Default';
 
-// Users API Endpoint: https://dummyjson.com/c/fbb6-9a35-4cd7-a755
-
-const App = () => {
+const UsersPage: React.FC = () => {
   return (
-    <Layout title="Users">
+    <DefaultLayout title="Users">
       <div className="flex gap-8 items-center mb-4">
         {/* Search Input */}
         <input type="search" placeholder="Search" className="w-full p-2 rounded-md border border-gray-300" />
 
         {/* Only Active Users Checkbox */}
         <label htmlFor="only-active-users" className="shrink-0 text-sm">
-          <input id="only-active-users" type="checkbox" className="mr-2" />
+          <input id="only-active-users" type="checkbox" className="mr-2" />{' '}
           Only Active Users
         </label>
       </div>
@@ -20,10 +18,7 @@ const App = () => {
       <table className="relative min-w-full divide-y divide-gray-300 text-gray-900">
         <thead>
           <tr>
-            <th
-              scope="col"
-              className="py-3.5 pr-3 pl-4 text-left text-sm font-semibold sm:pl-0"
-            >
+            <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold">
               Name
             </th>
             <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold">
@@ -40,7 +35,7 @@ const App = () => {
         <tbody className="divide-y divide-gray-200 bg-white">
           {/* User Row */}
           <tr>
-            <td className="py-5 pr-3 pl-4 text-sm whitespace-nowrap sm:pl-0">
+            <td className="py-5 px-3 text-sm whitespace-nowrap">
               <div className="flex items-center">
                 <div className="size-11 shrink-0">
                   <img
@@ -79,8 +74,8 @@ const App = () => {
           </tr>
         </tbody>
       </table>
-    </Layout>
+    </DefaultLayout>
   );
 };
 
-export default App;
+export default UsersPage;
